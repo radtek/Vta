@@ -1,0 +1,1 @@
+open tts.exe in cmd like this :  C:\>tts.exe hellow Vta or C:\>tts.exe -h
