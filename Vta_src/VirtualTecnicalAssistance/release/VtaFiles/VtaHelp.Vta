@@ -1,0 +1,122 @@
+Program Name - Virtual Technical Assistance (Vta)
+Develop by   - Deep Govind (Software Engineer)
+Diploma From - Govt. Polytechnic Unnao(U.P)
+Contect Info - 738896641 , deepgovind4@gmail.com
+
+About Vta : This is a software which is work in voice command . what you say this software do the command 
+            you can control cmd command , mouse double click single click  , send key board command with voice
+			Vta also provide hindi voice  typer and english voice typer and english to hindi converter dictionary
+            you can also ask qustion to vta Ex. what is nasa. vta give answer it.			
+
+Vta Feature :
+  1. Control your computer with voice.
+  2. control windows CMD command with voice,
+  3. control Mouse double and single click by giving refrencf of image to click.
+  4. control key board command , send key by voice .
+  5. provide voice hindi typer.
+  6. provide voice english typer.
+  7. provide englich to hindi convert.
+  8. Your Virtual Assistance, you can ask qustions and get answer.
+
+ Vta System Requirnment :
+   1. widows 32-bit, or 64-bit.
+   2. java ( jre 1.8 or greater )
+   3. 500 GB or More Ram
+   4. good Processer.
+  
+ Used Programming Language  to creat program :
+    1. C 
+	2  C++
+	3. java
+	4. AIML
+	5  CSS
+Used Programming Language Library  to creat program :
+    1. C & C++ GNU Library
+	2. QT 5.7 for Designing
+	3. AIML for Assistance
+	4. sphinx3 for voice Recognization. (java)
+	5. freetts for text to speak.
+	6. opencv 3.0 for image processing.
+	 
+	
+1 ) Write Setting :
+    write show setting in Vta Text Box or Right Click on System Troy and Select Option.
+	1. write voice text, which you went to speak.
+	2. select type, where you went to send command.
+	3. write command arguments to command.
+	
+	Example select type : 
+	   1. toCMD : 
+	     1.Write Voice Text : open explorer  // this is voice recognize text 
+		 2.Select Type : ToCMD   // following command send to cmd
+		 3.Write Arguments :explorer //or explorer C:\ or notepad.exe // you can pass argument also
+		 5. click add button.
+		 6. your command save for next start or start your application again.
+		 In following command : if you speak open explorer Vta send command to CMD 
+		 ( As you work in windows cmd )   explorer .
+		 
+	   2. Send Key : 
+	     1.Write Voice Text : close window  // this is voice recognize text 
+		 2.Select Type : SendKey   // following command send to KeyBoard
+		 3.There are two text box show select key command from combo boxs.
+		    1.VK_ALT{0x12}
+            2.VK_F4{0x76}
+			after selecting key in following text box type a command : VK_ALT{0x12}+VK_F4{0x76}
+		 4.Write Arguments :VK_ALT{0x12}+VK_F4{0x76} // you can pass argument also
+		 5. click add button.
+		 6. your command save for next start or start your application again.
+		 
+		 In following command : if you speak close window then Vta send KeyBoad command alt+f4
+		 
+		 note: if you went to send more then one key command Write Arguments using key box
+		       VK_ALT{0x12}+VK_F4{0x76};VK_ALT+;VK_LCONT{0x23}+V;.......
+			   VK_ALT+ for single key command.
+			   VK_LCONT{0x23}+V for double key command;
+			   all command sepreted by ';' .
+		 
+		 3. DoubleClick :
+		   1.Write Voice Text : minimize  // this is voice recognize text 
+		   2.Select Type : DoubleClick    
+		   3.Write Arguments : minimize // name of image
+		   4.click Capture Image button
+		   5.move Image Capture Box to Minimize image and press enter key.
+		   
+		 note : when you speak minimize Vta send Mouse double click command in active window .
+		 
+		 4. SingleClick :
+		  Send Single click mouse command in captured image. 
+		   
+		 
+   Note : See Already Created Command. 
+   Note : Double Click To Delete a command;
+   
+2 ) Import command :
+      import exported command 
+3 ) Export Command :
+      export Command For further use.
+	  
+4. ) Default Voice : You Can Change Thease Command.
+      1. Start English Typing Txt :  to Start a English Voice typer.
+	  2. Start Hindi Typing Txt :  to Start a Hindi Voice typer.
+	  3. Start Hindi Dictionary :   to Start Hindi Dictionart 
+	     in this dictionary you can type english text it automatic convert to hindi 
+         and press enter key this converted text send to active text editor.
+         note : select text editor for 3 send to set active.		 
+	  
+	  4.  Stop  Dictionary :     Stop or hide dictionary text.
+	  5.  Stop Typer  : to stop voice typing text.
+	  6.  Set Time To Sleep : Set time to stop all  Send Command . // autometic stop recognize in Second. // not work any voice command
+	  7.  Set Txt To Get Up : set voice text Get up from sleeping or recognize all command continue.   //   work all voice command
+	  8.  Set Txt To Sleep   : set voice text to sleep. // not work any voice command
+	  
+	  9. Click Save : all command save for next start. or start Vta again.
+	  
+	  
+	  
+	  
+	   Note : Thease all command work in writing vta text box.  
+
+5. ) start chat or get answer your qustion :
+    write 'chat' in Vta Text box and wait starting...
+	ask wustion by tyoing text;
+	  

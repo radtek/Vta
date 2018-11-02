@@ -1,0 +1,21 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Digits Grammar file
+ */
+
+grammar digits;
+ 
+
+/*public <numbers> = (oh | zero | one | two | three | four | five | six | seven |   eight | nine) * ; 
+ public <numbers1> = (open | drive | ) * ;
+ 
+ public <Name> = (VICKY)*;
+ public <command> = (close | show drives | shut down | restart | open | minimize | BROWSER | FORWARD | LAST | MUSIC | NEXT  | PLAYER) ;
+*/
+
+public <basicCmd> = <command>  ;
+
+<command> = <action> <object>;
+<action> =  open | close |delete |  move;
+<object> = [the | a] (window | file | menu);

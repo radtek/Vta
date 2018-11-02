@@ -1,0 +1,3 @@
+#JSGF V1.0;
+grammar VtaEnglishDic;
+public <Command1> = ( close | shutdown | minimize | open explorer );

@@ -1,0 +1,5 @@
+#JSGF V1.0;
+grammar Command;
+public <Command1> = ( open c drive | minimize all window | restart computer | shutdown computer | open explorer | pause | play | select all | search | back | next );
+public <Command2> = ( reload | search | close | minimize | next | close window );
+public <CommanCommand> = ( get up from sleep | go to sleep | english typing start | open dictionary | hindi typing start );

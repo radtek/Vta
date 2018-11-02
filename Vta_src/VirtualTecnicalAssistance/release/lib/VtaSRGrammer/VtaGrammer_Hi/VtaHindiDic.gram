@@ -1,0 +1,5 @@
+#JSGF V1.0;
+ 
+grammar VtaHindiDic;
+
+public <greet> = (aura | ka | jaraa | shariira mii | milaa )*;

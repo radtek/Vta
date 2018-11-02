@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+/**
+ * JSGF VtaSR_Hi Grammar file
+ */
+
+grammar VtaSR_Hi;
+ 
+public <greet> = (  koo ban:ga kara doo | koo ban:ga | shariira mii jaraa| milaa );

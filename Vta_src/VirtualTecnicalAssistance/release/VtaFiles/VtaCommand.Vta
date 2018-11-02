@@ -1,0 +1,122 @@
+<!DOCTYPE GMif_Data>
+<command>
+ <command0>
+  <VtaVoice>open c drive</VtaVoice>
+  <CommandTo>ToCMD</CommandTo>
+  <CommandArg>explorer c:\</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command0>
+ <command1>
+  <VtaVoice>minimize all window</VtaVoice>
+  <CommandTo>SendKey</CommandTo>
+  <CommandArg>VK_LWIN{0x5B}+M</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command1>
+ <command2>
+  <VtaVoice>restart computer</VtaVoice>
+  <CommandTo>ToCMD</CommandTo>
+  <CommandArg>shutdown -r</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>2</ChackedStat>
+ </command2>
+ <command3>
+  <VtaVoice>shutdown computer</VtaVoice>
+  <CommandTo>ToCMD</CommandTo>
+  <CommandArg>shutdown -s</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>2</ChackedStat>
+ </command3>
+ <command4>
+  <VtaVoice>open explorer</VtaVoice>
+  <CommandTo>ToCMD</CommandTo>
+  <CommandArg>explorer</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command4>
+ <command5>
+  <VtaVoice>pause</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>pause.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command5>
+ <command6>
+  <VtaVoice>play</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>play.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command6>
+ <command7>
+  <VtaVoice>select all</VtaVoice>
+  <CommandTo>SendKey</CommandTo>
+  <CommandArg>VK_CONTROL{0x11}+A;</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command7>
+ <command8>
+  <VtaVoice>search</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>search_browser.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command8>
+ <command9>
+  <VtaVoice>back</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>back_explo.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command9>
+ <command10>
+  <VtaVoice>next</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>next_explo.png.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command10>
+ <command11>
+  <VtaVoice>reload</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>reload.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command11>
+ <command12>
+  <VtaVoice>search</VtaVoice>
+  <CommandTo>SendKey</CommandTo>
+  <CommandArg>VK_ALT{0x12}+;VK_ALT{0x12}+;VK_ALT{0x12}+;</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command12>
+ <command13>
+  <VtaVoice>close</VtaVoice>
+  <CommandTo>SendKey</CommandTo>
+  <CommandArg>VK_ALT{0x12}+VK_F4{0x73};</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>2</ChackedStat>
+ </command13>
+ <command14>
+  <VtaVoice>minimize</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>minimize.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command14>
+ <command15>
+  <VtaVoice>next</VtaVoice>
+  <CommandTo>SingleClick</CommandTo>
+  <CommandArg>nextplay.png</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command15>
+ <command16>
+  <VtaVoice>close window</VtaVoice>
+  <CommandTo>SendKey</CommandTo>
+  <CommandArg>VK_ALT{0x12}+VK_F4{0x73};</CommandArg>
+  <CommandType>Ok</CommandType>
+  <ChackedStat>0</ChackedStat>
+ </command16>
+</command>
