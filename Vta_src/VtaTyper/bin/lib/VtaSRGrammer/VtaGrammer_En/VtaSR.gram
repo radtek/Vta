@@ -1,0 +1,13 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Digits Grammar file
+ */
+
+grammar digits;
+ 
+
+/*public <numbers> = (oh | zero | one | two | three | four | five | six | seven |   eight | nine) * ; 
+public <numbers1> = (open | drive | ) * ;*/
+public <numbers2> =  (  [ go ] my name  is [not] deep | [deep | go ] how are you | i am fine| ok thank you | go to sleep and open after | work very well ) * ;
+ public <nasty> = I saw a [cat* | dog* | mouse*];

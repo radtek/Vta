@@ -1,0 +1,8 @@
+#JSGF V1.0;
+ 
+grammar Command;
+
+public <CmdDefault> = (close | minimize | file | save );
+
+public <CmdUser> = ( open explorer | shut down | open command) ;
+ 
