@@ -1,0 +1,1 @@
+java -jar VtaSR.jar -l En -lm VtaSR_En_NoM.trigram.lm

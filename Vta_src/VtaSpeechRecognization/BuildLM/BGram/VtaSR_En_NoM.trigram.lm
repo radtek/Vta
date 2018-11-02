@@ -1,0 +1,92 @@
+#############################################################################
+## Copyright (c) 1996, Carnegie Mellon University, Cambridge University,
+## Ronald Rosenfeld and Philip Clarkson
+## Version 3, Copyright (c) 2006, Carnegie Mellon University 
+## Contributors includes Wen Xu, Ananlada Chotimongkol, 
+## David Huggins-Daines, Arthur Chan and Alan Black 
+#############################################################################
+=============================================================================
+===============  This file was produced by the CMU-Cambridge  ===============
+===============     Statistical Language Modeling Toolkit     ===============
+=============================================================================
+This is a 3-gram language model, based on a vocabulary of 11 words,
+  which begins "backward", "browser", "e-mail"...
+This is a CLOSED-vocabulary model
+  (OOVs eliminated from training data and are forbidden in test data)
+Good-Turing discounting was applied.
+1-gram frequency of frequency : 8 
+2-gram frequency of frequency : 10 0 0 0 0 0 0 
+3-gram frequency of frequency : 10 0 0 0 0 0 0 
+1-gram discounting ratios : 0.80 
+2-gram discounting ratios : 
+3-gram discounting ratios : 
+This file is in the ARPA-standard format introduced by Doug Paul.
+
+p(wd3|wd1,wd2)= if(trigram exists)           p_3(wd1,wd2,wd3)
+                else if(bigram w1,w2 exists) bo_wt_2(w1,w2)*p(wd3|wd2)
+                else                         p(wd3|w2)
+
+p(wd2|wd1)= if(bigram exists) p_2(wd1,wd2)
+            else              bo_wt_1(wd1)*p_1(wd2)
+
+All probs and back-off weights (bo_wt) are given in log10 form.
+
+Data formats:
+
+Beginning of data mark: \data\
+ngram 1=nr            # number of 1-grams
+ngram 2=nr            # number of 2-grams
+ngram 3=nr            # number of 3-grams
+
+\1-grams:
+p_1     wd_1 bo_wt_1
+\2-grams:
+p_2     wd_1 wd_2 bo_wt_2
+\3-grams:
+p_3     wd_1 wd_2 wd_3 
+
+end of data mark: \end\
+
+\data\
+ngram 1=11
+ngram 2=10
+ngram 3=10
+
+\1-grams:
+-1.0969 backward	-0.4409
+-1.0969 browser	-0.4409
+-1.0969 e-mail	-0.4409
+-1.0969 forward	-0.4409
+-1.0969 last	-0.3802
+-1.0969 music	0.0000
+-1.0969 new	-0.4409
+-1.0969 next	-0.3802
+-1.0969 open	-0.4409
+-1.0969 player	0.0000
+-0.6990 window	-0.6232
+
+\2-grams:
+-0.1761 backward next 0.1761
+-0.1761 browser new 0.1761
+-0.1761 e-mail forward 0.1761
+-0.1761 forward backward 0.1761
+-0.1761 last window -0.0792
+-0.1761 new e-mail 0.1761
+-0.1761 next window -0.0792
+-0.1761 open browser 0.1761
+-0.3979 window last 0.1761
+-0.3979 window open -0.2883
+
+\3-grams:
+-0.3010 backward next window 
+-0.3010 browser new e-mail 
+-0.3010 e-mail forward backward 
+-0.3010 forward backward next 
+-0.3010 last window open 
+-0.3010 new e-mail forward 
+-0.3010 next window last 
+-0.3010 open browser new 
+-0.3010 window last window 
+-0.3010 window open music 
+
+\end\

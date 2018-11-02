@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Hello World example
+ */
+
+grammar VtaSR_Hi;
+
+public <greet> = (aura | ka | jaraa | shariira mii | milaa )*;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<project basedir="." default="all" name="Sphinx-4">
+ 
+    <property name="version" value="1.0"/>
+    <property name="demo_src_dir" value="src/"/>
+    <property name="build_dir" value="bld"/>
+    <property name="demo_classes_dir" value="${build_dir}"/>
+    <property name="lib_dir" value="bin/lib/VtaSRLib"/>
+    <property name="bin_dir" value="bin"/>
+    <property name="deploy_dir" value="deploy"/>
+    <path id="libs">
+        <pathelement path="${demo_classes_dir}"/>
+        <pathelement location="${lib_dir}/sphinx4.jar"/>
+        <pathelement location="${lib_dir}/jsapi.jar"/>
+        <pathelement location="${lib_dir}/tags.jar"/>
+        <pathelement location="${lib_dir}/js.jar"/>
+        <pathelement location="${lib_dir}/junit-4.4.jar"/>
+    </path>
+ 
+    
+  <target name="compile_sphinx_VtaSR">
+        <mkdir dir="${demo_classes_dir}/VtaSR"/>
+	    <javac debug="true"
+               listfiles="true"
+               deprecation="true"
+               includeAntRuntime="false"
+               srcdir="${demo_src_dir}"
+               destdir="${demo_classes_dir}"
+               includes="VtaSR/**">
+            <classpath refid="libs"/>
+        </javac>
+        <mkdir dir="${bin_dir}"/>
+        <jar destfile="${bin_dir}/VtaSR.jar"
+             manifest="${demo_src_dir}/VtaSR/VtaSR.Manifest"
+             basedir="${demo_classes_dir}"
+             includes="VtaSR/**"
+             compress="true"/>
+    </target>
+    
+</project>

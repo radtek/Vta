@@ -1,0 +1,2 @@
+Main-Class: VtaSR.VtaSR
+Class-Path: ./lib/VtaSRLib/sphinx4.jar ./lib/VtaSRLib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz_Hi.jar ./lib/VtaSRLib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz_En.jar
